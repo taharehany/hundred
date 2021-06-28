@@ -1,0 +1,171 @@
+/** rtl styles **/
+html[dir=rtl] {
+    body {
+        font-family: "Tajawal", sans-serif;
+    }
+
+    header {
+        .navbar-light.navbar {
+            .buttons {
+                margin-left: 0;
+                margin-right: 25px;
+
+                .icon.lang {
+                    margin-right: 0;
+                    margin-left: 15px;
+
+                    .dropdown-lang {
+                        left: 100%;
+                        right: auto;
+                        left: 100%;
+                        right: auto;
+                        -webkit-border-radius: 0 15px 15px 15px;
+                        -moz-border-radius: 0 15px 15px 15px;
+                        -ms-border-radius: 0 15px 15px 15px;
+                        -o-border-radius: 0 15px 15px 15px;
+
+                        .items {
+                            a {
+                                padding: 10px 40px 10px 15px
+                            }
+                        }
+                    }
+                }
+
+                .logout-dropdown {
+                    .dropdown-person {
+                        right: auto;
+                        left: 90%;
+                        border-radius: 0 15px 15px 15px;
+                        -webkit-border-radius: 0 15px 15px 15px;
+                        -moz-border-radius: 0 15px 15px 15px;
+                        -ms-border-radius: 0 15px 15px 15px;
+                        -o-border-radius: 0 15px 15px 15px;
+                        a {
+                            padding-left: 15px;
+                            padding-right: 40px;
+                        }
+                        .icon {
+                            span  {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.services {
+        .service-box {
+            .image {
+                margin-left: 15px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .alert.alert-warning {
+        .close {
+            right: auto;
+            left: 10px;
+        }
+
+        &.alert-dismissible {
+            padding-right: 15px;
+            padding-left: 3rem;
+        }
+    }
+
+    .main-wrapper {
+        &.terms {
+            section.terms {
+                .details {
+                    ul {
+                        li {
+                            padding-right: 20px;
+                            padding-left: 0;
+
+                            &::after {
+                                right: 0;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.contact {
+            section.contact_sec_page {
+                .info-area {
+                    ul {
+                        li {
+                            padding-right: 45px;
+                            padding-left: 0;
+
+                            i {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-wrapper.survey {
+        section.survey {
+            .survey-form {
+                fieldset {
+                    .form-radio {
+                        label {
+                            &::before {
+                                right: -25px;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-content {
+            .footer-box {
+                .contact {
+                    ul {
+                        li {
+                            padding-right: 40px;
+                            padding-left: 0;
+
+                            i {
+                                right: 0;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main,
+            .services {
+                ul {
+                    li {
+                        padding-right: 20px;
+
+                        &::after {
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/** rtl styles **/

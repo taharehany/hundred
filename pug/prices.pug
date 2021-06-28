@@ -1,0 +1,70 @@
+doctype 
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.prices
+            include includes/header.pug
+
+            // prices part
+            section(class='prices')
+                div(class='container')
+                    div(class='title')
+                        h2 prices
+                        p Enter your business details below
+                    div(class='prices-box')
+                        div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                            p You should check in on some of those fields below.
+                            button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        div(class='form-area')
+                            form(action='')
+                                .row
+                                    div(class="col-lg-6")
+                                        div(class='form-group')
+                                            input(placeholder='Business name' class='form-control' type='text' required)
+                                    div(class="col-lg-6")            
+                                        div(class='form-group')
+                                            select(class='form-control' required)
+                                                option(disabled='' selected='') Please Select Category
+                                                option(value="") online 
+                                                option(value="") offline 
+                                                option(value="") both
+                                    div(class="col-lg-12")
+                                        .amount 
+                                            p Shipment amount
+                                            ul.selects
+                                                li.active
+                                                    span +100
+                                                li
+                                                    span +200
+                                                li
+                                                    span +300
+                                                li
+                                                    span +400
+                                    div(class="col-lg-12")
+                                        div(class='form-group amount-input')
+                                            input(value='' class='form-control' type='hidden' required)
+                                    div(class="col-lg-6")
+                                        div(class='form-group')
+                                            input(placeholder='Phone Number' class='form-control' type='number' required)
+                                    div(class="col-lg-6")                
+                                        div(class='form-group')
+                                            input(placeholder='Facebook page' class='form-control' type='url' required)
+                                    div(class="col-lg-6")                
+                                        div(class='form-group')
+                                            input(placeholder='City' class='form-control' type='text' required)
+                                    div(class="col-lg-6")                
+                                        div(class='form-group')
+                                            input(placeholder='Area' class='form-control' type='text' required)
+                                    div(class="col-lg-6")
+                                        div(class='form-group')
+                                            textarea(rows='5' placeholder='Full address' class='form-control')
+                                    div(class="col-lg-12")
+                                        div(class='recapcha')
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            button(class='btn btn-danger hvr-sweep-to-top' type='submit') Continue
+            // prices part
+            include includes/footer.pug
+        include includes/scripts.pug

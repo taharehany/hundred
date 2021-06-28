@@ -1,0 +1,156 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper
+            include includes/header.pug
+
+            // add pickup
+            section(class='global_inputs')
+                //img(src='images/location.svg', class="location-img img-fluid", alt='')
+                div(class='container')
+                    div(class='title')
+                        h2 إضافة pickup
+                    div(class='global_inputs_box')
+                        div(class='form-area')
+                            form(action='')
+                                .row
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") الراسل 
+                                            input(placeholder='الراسل' class='form-control' type='text' required)
+                                            span.myalert يجب الضغط على enter لإظهار الراسل   
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") رقم البوليصة 
+                                            input(placeholder='رقم' class='form-control' type='number' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") عدد الطرود 
+                                            input(placeholder='عدد الطرود' class='form-control' type='number' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") وسيلة النقل
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") تاريخ التسليم 
+                                            input(placeholder='تاريخ التسليم' class='form-control' type='date' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") المرسل إليه 
+                                            input(placeholder='المرسل إليه' class='form-control' type='text' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") رقم هاتف 
+                                            input(placeholder='هاتف' class='form-control' type='number' required)
+                                    div(class="col-lg-12 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") عنوان المرسل إليه 
+                                            input(placeholder='عنوان المرسل إليه' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") قيمة الشحن
+                                            input(placeholder='قيمة الشحن' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") طريقة الدفع
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد 
+                                                option(value="") تحديد 
+                                    div(class="col-lg-4 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") نوع الشحن
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد 
+                                                option(value="") تحديد 
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") ملاحظات
+                                            textarea(rows='4' placeholder='ملاحظات' class='form-control')
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            button(class='btn btn-success hvr-sweep-to-top' type='') حفظ
+                                            button(class='btn cancel btn-danger hvr-sweep-to-top' type='') إلغاء
+                                            button(class='btn btn-light hvr-sweep-to-top' type='') إعادة تعيين
+            // add pickup
+
+            // global table
+            section.global_table
+                .container 
+                    div(class='global_inputs_box')
+                        div(class='form-area')
+                            form(action='')
+                                .row
+                                    div(class="col-lg-4 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") text 
+                                            input(placeholder='text' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") text 
+                                            input(placeholder='text' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") text 
+                                            input(placeholder='text' class='form-control' type='text' required)
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            button(class='btn btn-success hvr-sweep-to-top' type='') حفظ
+                                            button(class='btn cancel btn-danger hvr-sweep-to-top' type='') إلغاء
+                                            button(class='btn btn-light hvr-sweep-to-top' type='') إعادة تعيين
+                    .table-container
+                        table(class='table table-bordered')
+                            thead
+                                tr
+                                th(scope='col') #
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                            tbody
+                                tr
+                                th(scope='row') 1
+                                td Mark
+                                td Otto
+                                td Mark
+                                td Mark
+                                td Mark
+                                tr
+                                th(scope='row') 2
+                                td Jacob
+                                td Thornton
+                                td Mark
+                                td Mark
+                                td Mark
+                                tr
+                                th(scope='row') 3
+                                td Larry
+                                td the Bird
+                                td Mark
+                                td Mark
+                                td Mark
+            // global table
+
+            // modal popup confirm cancel
+            section.modal
+                .container 
+                    div(class='modal-content')
+                        div(class='modal-header')
+                            button(class='close' type='button' data-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') ×
+                        div(class='modal-body')
+                            p هل تريد الإلغاء؟
+                        div(class='modal-footer')
+                            button(class='btn btn-secondary return' type='button' data-dismiss='modal') رجوع
+                            button(class='btn btn-danger' type='button') تأكيد
+            // modal popup confirm cancel
+            include includes/footer.pug
+        include includes/scripts.pug

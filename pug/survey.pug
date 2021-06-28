@@ -1,0 +1,137 @@
+doctype 
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.survey
+            include includes/header.pug
+            
+            // survey page
+            section(class='survey')
+                div(class='container')
+                    div(class='title')
+                        h2 survey
+                    div(class='survey-form')
+                        div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                            p You should check in on some of those fields below.
+                            button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        form(action='')
+                            fieldset.step_1
+                                h3(class="sub-title") Will you repeat the experience?
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' checked required)
+                                                label(for="") Yes 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") No 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Maybe 
+                                    div(class="col-lg-12")
+                                        div(class='clickable')
+                                            button(class='btn next_btn hvr-sweep-to-top' type='button') Next
+                            fieldset.step_2
+                                h3(class="sub-title") How do you find the price of our service?
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' checked required)
+                                                label(for="") suitable 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Over price 
+                                    div(class="col-lg-12")
+                                        div(class='clickable')
+                                            button(class='btn next_btn hvr-sweep-to-top' type='button') Next
+                            fieldset.step_3
+                                h3(class="sub-title") How do you rate the service speed ?
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' checked required)
+                                                label(for="") Very fast 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") fast 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Meduim 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Slow 
+                                    div(class="col-lg-12")
+                                        div(class='clickable')
+                                            button(class='btn next_btn hvr-sweep-to-top' type='button') Next
+                            fieldset.step_4
+                                h3(class="sub-title") What is your evaluation of the communication service with you?
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' checked required)
+                                                label(for="") Excellent 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Good 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Bad 
+                                    div(class="col-lg-12")
+                                        div(class='clickable')
+                                            button(class='btn next_btn hvr-sweep-to-top' type='button') Next
+                            fieldset.step_5
+                                h3(class="sub-title") How do you find our service ?
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' checked required)
+                                                label(for="") Excellent 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Good 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Bad 
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            div(class='form-radio')
+                                                input(id="" type='radio' required)
+                                                label(for="") Low quality 
+                                    div(class="col-lg-12")
+                                        div(class='clickable')
+                                            button(class='btn final_btn hvr-sweep-to-top' type='submit') Send
+                            fieldset.step_6
+                                .thank-part
+                                    .icon
+                                        img(src='images/confirm.svg', class="img-fluid", alt='')
+                                    h3(class="conf-title") Thank you for your time :)
+            // survey page
+            include includes/footer.pug
+        include includes/scripts.pug

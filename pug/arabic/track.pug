@@ -1,0 +1,47 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper
+            include includes/header.pug
+
+            // track part
+            section(class='track')
+                div(class='container')
+                    div(class='title')
+                        h2 Track your shipment
+                    div(class='track-content wow fadeInUp' data-wow-duration='1s')
+                        .shipping-steps
+                            div(class='track-box first_step active')
+                                .icon 
+                                    img(src="../images/svgs/01.svg" class="img-fluid" alt="")
+                                .text 
+                                    h3 Shipping Active
+                            div(class='track-box second_step')
+                                .icon 
+                                    img(src="../images/svgs/02.svg" class="img-fluid" alt="")
+                                .text
+                                    h3 Shipping in progress
+                            div(class='track-box third_step')
+                                .icon 
+                                    img(src="../images/svgs/03.svg" class="img-fluid" alt="")
+                                .text 
+                                    h3 Delivered Successfully
+                        div(class='track-text')
+                            p Sender: 
+                                span ahmed ahmed
+                            p Receiver: 
+                                span mona hussien
+
+                            p Shipment Number: 
+                                span 2312203699
+
+                            p Shipment Status: 
+                                span shipping in progress
+                            p Reason: 
+                                span reason    
+            // track part
+
+            include includes/footer.pug
+        include includes/scripts.pug

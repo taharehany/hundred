@@ -1,0 +1,30 @@
+doctype 
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.job
+            include includes/header.pug
+
+            // job part
+            section(class='job')
+                div(class='container')
+                    div(class='title')
+                        h2 Accountant 
+                    div(class='job-box wow fadeInUp' data-wow-duration='1s')
+                        div(class='details')
+                            .about
+                                h3 About the Job
+                                p The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                            .requirments 
+                                h3 Job requirments
+                                ul 
+                                    li The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                    li Lorem ipsum, or lipsum as it is sometimes known have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                    li The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                .clickable
+                                    a.btn.btn-success(class="hvr-sweep-to-top" href="") Apply job    
+            // job part
+
+            include includes/footer.pug
+        include includes/scripts.pug

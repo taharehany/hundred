@@ -1,0 +1,154 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.home
+            include includes/header.pug
+
+            // slider part
+            section.slider
+                .container
+                    .slider-content
+                        .slider-text
+                            h2 Track your shipment 
+                            .input-track
+                                form(action="") 
+                                    input(type="text" placeholder="Enter your track ID")
+                            .slider-btn
+                                a(href="track.html")
+                                    button.btn.btn-success(type='submit' class="hvr-sweep-to-top") track
+            // slider part
+
+            // about part
+            section(class='about')
+                div(class='container')
+                    div(class='title')
+                        h2 About Us
+                    .row  
+                        .col-lg-7
+                            div(class='about-text')
+                                .part
+                                    h2 100 hundred
+                                    p The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                .part    
+                                    h2 At 100 hundred
+                                    p Lorem ipsum, or lipsum as it is sometimes known have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.   
+                        .col-lg-5
+                            div(class='about-image')
+                                img(src="../images/about/about.webp", class="img-fluid", alt="")
+                .absolute-number
+                    h3 100
+            // about part
+            
+            // services part
+            section(class='services')
+                div(class='container')
+                    div(class='title')
+                        h2 our services
+                    div(class='row')
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-shipping-fast")
+                                div(class='details')
+                                    h3 Shipping solution
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-cash-register")
+                                div(class='details')
+                                    h3 Payment method
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-user-shield")
+                                div(class='details')
+                                    h3 Safety delivery
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-user-tie")
+                                div(class='details')
+                                    h3 Good workers
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+            // services part
+
+            // partners part
+            section(class='partners' dir="ltr")
+                div(class='container')
+                    div(class='title')
+                        h2 our partners
+                    .partners-content
+                        .partners_carousel.owl-carousel.owl-theme
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/01.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/02.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/03.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/04.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/05.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/06.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/07.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/08.png', class="img-fluid", alt='')
+                            .single_item
+                                .inner
+                                    img(src='../images/partners/09.png', class="img-fluid", alt='')
+            // partners part
+
+            // contact part
+            section(class='contact')
+                //img(src='../images/location.svg', class="location-img img-fluid", alt='')
+                div(class='container')
+                    div(class='title')
+                        h2 contact us
+                    div(class='contact-box')
+                        div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                            p You should check in on some of those fields below.
+                            button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        div(class='form-area')
+                            form(action='')
+                                .row
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            input(placeholder='Name' class='form-control' type='text' required)
+                                    div(class="col-lg-12")            
+                                        div(class='form-group')
+                                            input(placeholder='E-mail' class='form-control' type='email' required)
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            input(placeholder='Phone' class='form-control' type='number' required)
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            textarea(rows='6' placeholder='Type your message' class='form-control')
+                                    div(class="col-lg-12")
+                                        div(class='form-group')
+                                            button(class='btn btn-danger hvr-sweep-to-top' type='submit') Send
+                                    div(class="col-lg-12")
+                                        div(class='text-center')
+                                            p(class='successfully') Message Sent Successfully 
+            // contact part
+            include includes/footer.pug
+        include includes/scripts.pug

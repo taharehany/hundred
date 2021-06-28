@@ -1,0 +1,70 @@
+doctype 
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.about
+            include includes/header.pug
+
+            // about part
+            section(class='about')
+                div(class='container')
+                    div(class='title')
+                        h2 About Us
+                    .row  
+                        .col-lg-7
+                            div(class='about-text')
+                                .part
+                                    h2 100 hundred
+                                    p The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+                                .part    
+                                    h2 At 100 hundred
+                                    p Lorem ipsum, or lipsum as it is sometimes known have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.   
+                        .col-lg-5
+                            div(class='about-image')
+                                img(src="images/about/about.webp", class="img-fluid", alt="")
+                .absolute-number
+                    h3 100
+            // about part
+            
+            // services part
+            section(class='services')
+                div(class='container')
+                    div(class='title')
+                        h2 our services
+                    div(class='row')
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-shipping-fast")
+                                div(class='details')
+                                    h3 Shipping solution
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-cash-register")
+                                div(class='details')
+                                    h3 Payment method
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-user-shield")
+                                div(class='details')
+                                    h3 Safety delivery
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+                        div(class='col-md-6 col-lg-6')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    .inner
+                                        i(class="fas fa-user-tie")
+                                div(class='details')
+                                    h3 Good workers
+                                    p The passage is attributed to an unknown typesetter in the 15th century
+            // services part
+            include includes/footer.pug
+        include includes/scripts.pug

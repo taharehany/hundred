@@ -1,0 +1,408 @@
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 992px) {
+    header {
+        .navbar-light.navbar {
+            .buttons {
+                order: unset;
+                margin-right: 10px;
+                margin: 10px;
+            }
+
+            .navbar-nav {
+                padding-top: 25px;
+                align-items: flex-start;
+            }
+
+            .buttons {
+                justify-content: space-between;
+                width: 100%;
+
+                .icon {
+                    margin-right: 0;
+                    order: 2;
+
+                }
+
+                .logout-dropdown {
+                    .dropdown-person {
+                        right: auto;
+                        left: 100%;
+                        border-radius: 0 15px 15px 15px;
+                        -webkit-border-radius: 0 15px 15px 15px;
+                        -moz-border-radius: 0 15px 15px 15px;
+                        -ms-border-radius: 0 15px 15px 15px;
+                        -o-border-radius: 0 15px 15px 15px;
+                    }
+                    .icon {
+                        span  {
+                            max-width: 230px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-toggler {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            box-shadow: none;
+            border: 0;
+            padding: 0;
+            justify-content: flex-end;
+
+            span {
+                display: block;
+                width: 40px;
+                height: 2px;
+                border-radius: 3px;
+                background-color: #fff;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 2px;
+                    border-radius: 3px;
+                    background: #fff;
+                    margin-top: -7px;
+                    transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 2px;
+                    border-radius: 3px;
+                    background: #fff;
+                    margin-top: 7px;
+                    transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                }
+            }
+
+            &:focus {
+                outline: none;
+                border: 0;
+                box-shadow: none;
+            }
+
+            &.close {
+                span {
+                    transform: rotate(50deg);
+                    -webkit-transform: rotate(50deg);
+                    -moz-transform: rotate(50deg);
+                    -ms-transform: rotate(50deg);
+                    -o-transform: rotate(50deg);
+                    width: 25px;
+
+                    &::before {
+                        width: 25px;
+                        transform: translateY(7px) rotate(80deg);
+                        -webkit-transform: translateY(7px) rotate(80deg);
+                        -moz-transform: translateY(7px) rotate(80deg);
+                        -ms-transform: translateY(7px) rotate(80deg);
+                        -o-transform: translateY(7px) rotate(80deg);
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    section.about {
+        .about-image {
+            max-height: 400px;
+            min-height: 250px;
+        }
+
+        .about-text {
+            .part {
+                padding-right: 0;
+
+                p {
+                    -webkit-line-clamp: 6;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .main-wrapper.offers {
+        section.offers {
+            .offer-box {
+                margin-bottom: 25px;
+
+                .details {
+                    p {
+                        min-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-content {
+            .footer-box {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    html[dir=rtl] {
+        header {
+            .navbar-light.navbar {
+                .buttons {
+                    margin-right: 10px;
+                }
+            }
+
+            .navbar-toggler {
+                span {
+                    &:before {
+                        left: 0;
+                        right: auto;
+                    }
+
+                    &:after {
+                        left: 0;
+                        right: auto;
+                    }
+                }
+            }
+            .navbar-light.navbar {
+                .buttons  {
+                    .logout-dropdown .dropdown-person {
+                        right: 100% !important;
+                        left: auto !important;
+                        border-radius: 15px 0 15px 15px;
+                        -webkit-border-radius: 15px 0 15px 15px;
+                        -moz-border-radius: 15px 0 15px 15px;
+                        -ms-border-radius: 15px 0 15px 15px;
+                        -o-border-radius: 15px 0 15px 15px;
+        
+                        a {
+                            padding-left: 40px;
+                            padding-right: 15px;
+                        }
+                    }
+                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.services {
+        .service-box {
+            display: block;
+            text-align: center;
+
+            .image {
+                margin: auto;
+                margin-bottom: 15px;
+            }
+
+            .details {
+                h3 {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .main-wrapper {
+        &.contact {
+            section.contact_sec_page {
+                .info-area {
+                    ul {
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+        
+        section.global_table{
+            table {
+                min-width: 150%;
+            }
+        }
+    }
+    html[dir=rtl] {
+        section.services {
+            .service-box {
+                .image {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    section.slider {
+        .slider-content {
+            .slider-text {
+                padding: 20px;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                .input-track {
+                    input {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.about {
+        padding: 50px 0 120px;
+
+        .absolute-number {
+            bottom: -60px;
+
+            h3 {
+                font-size: 100px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 63px;
+                    right: 82%;
+                }
+            }
+        }
+    }
+
+    .alert.alert-warning p {
+        font-size: 12px;
+    }
+
+    .main-wrapper {
+        section.track {
+            .track-content {
+                .shipping-steps {
+                    .track-box {
+                        .icon {
+                            width: 72px;
+                            height: 72px;
+
+                            img {
+                                max-width: 35px;
+                            }
+                        }
+
+                        .text {
+                            bottom: -50px;
+                            min-width: 100px;
+
+                            h3 {
+                                white-space: normal;
+
+                            }
+                        }
+                    }
+
+                    &::before,
+                    &::after {
+                        top: 36px;
+                    }
+                }
+
+                .track-text {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-wrapper {
+        section.global_inputs {
+            .global_inputs_box {
+                .form-area {
+                    .form-group {
+                        .btn {
+                            padding: 7px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        .navbar-light.navbar {
+            .buttons {
+                .butt.appoint {
+                    .btn {
+                        padding: 7px 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .navbar-brand {
+                img {
+                    max-width: 110px;
+                }
+            }
+        }
+    }
+
+    .title h2 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    footer {
+        .footer-content {
+            .footer-box {
+                .social-media {
+                    ul {
+                        li {
+                            a {
+                                i {
+                                    height: 30px;
+                                    width: 30px;
+                                    line-height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

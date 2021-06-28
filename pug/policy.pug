@@ -1,0 +1,167 @@
+doctype 
+html(lang="en")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper
+            include includes/header.pug
+
+            // edit policy
+            section(class='global_inputs')
+                //img(src='images/location.svg', class="location-img img-fluid", alt='')
+                div(class='container')
+                    div(class='title')
+                        h2 تعديل بوليصة
+                    div(class='global_inputs_box')
+                        div(class='form-area')
+                            form(action='')
+                                .row
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") رقم البوليصة 
+                                            input(placeholder='رقم' class='form-control' type='number' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") الراسل 
+                                            input(placeholder='الراسل' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-6")            
+                                        div(class='form-group')
+                                            label(for="") اسم الشركة 
+                                            input(placeholder='اسم الشركة' readonly class='form-control' type='email' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") قوائم الأسعار 
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد 
+                                                option(value="") تحديد 
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") المنطقة
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد 
+                                                option(value="") تحديد 
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") مندوب الاستلام
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد 
+                                                option(value="") تحديد 
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") المرسل إليه 
+                                            input(placeholder='المرسل إليه' class='form-control' type='text' required)
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") العنوان المرسل إليه
+                                            textarea(rows='3' placeholder='العنوان المرسل إليه' class='form-control')
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") رقم هاتف 1 
+                                            input(placeholder='هاتف' class='form-control' type='number' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") رقم هاتف 2 
+                                            input(placeholder='هاتف' class='form-control' type='number' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") عدد الطرود 
+                                            input(placeholder='عدد الطرود' class='form-control' type='number' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") تاريخ التسليم 
+                                            input(placeholder='تاريخ التسليم' class='form-control' type='date' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") مصاريف شحن البوليصة
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") سعر البوليصة
+                                            input(placeholder='سعر البوليصة' class='form-control' type='text' required)
+                                    div(class="col-lg-4 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") مبلغ الشحن
+                                            input(placeholder='سعر البوليصة' class='form-control' type='text' required)
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") نوع البوليصة
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                                option(value="") تحديد        
+                                    div(class="col-lg-6 col-md-6")
+                                        div(class='form-group')
+                                            label(for="") نوع الشحن
+                                            select(name="" class='form-control')
+                                                option(value="") تحديد
+                                                option(value="") تحديد
+                                                option(value="") تحديد        
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            label(for="") ملاحظات
+                                            textarea(rows='4' placeholder='ملاحظات' class='form-control')
+                                    div(class="col-lg-12 col-md-12")
+                                        div(class='form-group')
+                                            button(class='btn btn-success hvr-sweep-to-top' type='') حفظ
+                                            button(class='btn btn-danger hvr-sweep-to-top' type='') إلغاء
+                                            button(class='btn btn-light hvr-sweep-to-top' type='') إعادة تعيين
+            // edit policy
+
+            // global table
+            section.global_table
+                .container 
+                    .table-container
+                        table(class='table table-bordered')
+                            thead
+                                tr
+                                th(scope='col') #
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                                th(scope='col') test
+                            tbody
+                                tr
+                                th(scope='row') 1
+                                td Mark
+                                td Otto
+                                td Mark
+                                td Mark
+                                td Mark
+                                tr
+                                th(scope='row') 2
+                                td Jacob
+                                td Thornton
+                                td Mark
+                                td Mark
+                                td Mark
+                                tr
+                                th(scope='row') 3
+                                td Larry
+                                td the Bird
+                                td Mark
+                                td Mark
+                                td Mark
+            // global table
+
+            // modal popup confirm cancel
+            section.modal
+                .container 
+                    div(class='modal-content')
+                        div(class='modal-header')
+                            button(class='close' type='button' data-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') ×
+                        div(class='modal-body')
+                            p هل تريد الإلغاء؟
+                        div(class='modal-footer')
+                            button(class='btn btn-secondary return' type='button' data-dismiss='modal') رجوع
+                            button(class='btn btn-danger' type='button') تأكيد
+            // modal popup confirm cancel
+            include includes/footer.pug
+        include includes/scripts.pug

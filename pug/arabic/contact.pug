@@ -1,0 +1,61 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        include includes/head.pug
+    body
+        .main-wrapper.contact
+            include includes/header.pug
+            s
+            // contact page part
+            section(class='contact contact_sec_page')
+                div(class='container')
+                    div(class='info-area')
+                        div(class='title')
+                            h2 contact us
+                        .row
+                            div(class="col-md-6 col-lg-5 d-flex align-items-center")
+                                ul
+                                    li  
+                                        i(class='fas fa-envelope') 
+                                        a(href="mailto:") mail@yahoo.com      
+                                    li  
+                                        i(class='fas fa-phone-alt')
+                                        a(href="tel:") +201988209222       
+                                    li
+                                        i(class='fas fa-map-marker-alt')
+                                        span 6th of October city
+                            div(class="col-md-6 col-lg-7")
+                                .map
+                                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d273462.24074447365!2d31.040036836099866!3d29.942290800501333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145855e126df199d%3A0x24a6cf9d2fda5678!2z2YXYr9mK2YbYqSDYp9mE2LPYp9iv2LMg2YXZhiDYo9mD2KrZiNio2LHYjCDYp9mE2KzZitiy2Kk!5e0!3m2!1sar!2seg!4v1615387195012!5m2!1sar!2seg" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy")        
+                    div(class='form-area')
+                        div(class='title')
+                            h2 Message us
+                        div(class='contact-box')
+                            div(class='alert bg-danger alert-warning alert-dismissible fade show' role='alert')
+                                p You should check in on some of those fields below.
+                                button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                            div(class='form-area')
+                                form(action='')
+                                    .row
+                                        div(class="col-lg-12")
+                                            div(class='form-group')
+                                                input(placeholder='Name' class='form-control' type='text' required)
+                                        div(class="col-lg-12")            
+                                            div(class='form-group')
+                                                input(placeholder='E-mail' class='form-control' type='email' required)
+                                        div(class="col-lg-12")
+                                            div(class='form-group')
+                                                input(placeholder='Phone' class='form-control' type='number' required)
+                                        div(class="col-lg-12")
+                                            div(class='form-group')
+                                                textarea(rows='6' placeholder='Type your message' class='form-control')
+                                        div(class="col-lg-12")
+                                            div(class='form-group')
+                                                button(class='btn btn-danger hvr-sweep-to-top' type='submit') Send
+                                        div(class="col-lg-12")
+                                            div(class='text-center')
+                                                p(class='successfully') Message Sent Successfully 
+            // contact page part
+            include includes/footer.pug
+        include includes/scripts.pug
